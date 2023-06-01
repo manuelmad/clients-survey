@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Manuel Araujo Clients Survey">
+    <meta name= "robots" content= "index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+    <title>Encuesta a los clientes</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link href="index-tablets.css" media="screen and (min-width: 600px)" type="text/css" rel="stylesheet" />
+    <link href="index-desktop.css" media="screen and (min-width: 1024px)" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <my-header img="./imgs/logo.png" name1="PROYECTOS" name2="SOBRE MÍ" name3="CURRÍCULUM" name4="CONTACTO" linkhome="https://manuelmad.github.io/index.html" link1="https://manuelmad.github.io/proyectos/proyectos.html" link2="https://manuelmad.github.io/index.html#personal-info" link3="https://manuelmad.github.io/index.html#curriculum" link4="#contacto"></my-header>
+    <main>
+        <section class="title">
+            <h1>ENCUESTA EL CLIENTE</h1>
+        </section>
+        <section class="form">
+            <article class="form-container">
+                <form action="mailto:manuelmad1981@gmail.com" method="post" enctype="text/plain">
+                    <div>
+                        <p>
+                            <span>Nombre de la marca o negocio:</span>
+                            <input type="text" name="name" class="name">
+                        </p>
+                        <p>
+                            <span>Descripción del negocio:</span>
+                            <textarea class="description" name="description"></textarea>
+                        </p>
+                        <p>
+                            <span>Servicios y/o productos que ofrece el negocio:</span>
+                            <textarea class="products" name="products"></textarea>
+                        </p>
+                        <p>
+                            <span>Público objetivo:</span>
+                            <textarea class="target" name="target"></textarea>
+                        </p>
+                        <p>
+                            <span>Nombres y links de los negocios competencia:</span>
+                            <textarea class="competitor" name="competitor"></textarea>
+                        </p>
+                        <p>
+                            <span>Objetivo del sitio web:</span>
+                            <textarea class="goal" name="goal"></textarea>
+                        </p>
+                        <p>
+                            <span>Cuenta con manual de identidad corporativa? En caso afirmativo, adjuntarlo:</span>
+                            <input type="text" name="manual" class="manual">
+                        </p>
+                        <p>
+                            <span>Cuentan con servicio de hosting y dominio?</span>
+                            <input type="text" name="hosting" class="hosting">
+                        </p>
+                        <p>
+                            <span>Links hacia sus redes sociales:</span>
+                            <textarea class="social" name="social"></textarea>
+                        </p>
+                        <p>
+                            <span>Cantidad de secciones del sitio web:</span>
+                            <input type="number" name="sections" class="sections">
+                        </p>
+                        <p>
+                            <span>Cuál es el objetivo más importante del sitio web:</span>
+                            <textarea class="goal2" name="goal2"></textarea>
+                        </p>
+                    </div>
+                    <div>
+                        <!-- <p>
+                            <span>Ingresa tu amail:</span>
+                            <input type="email" placeholder="Ingresa tu e-mail" name="email" class="email">
+                        </p> -->
+                        <p class="btn-container"><button type="submit">Enviar Mensaje</button></p>
+                    </div>
+                </form>
+            </article>
+        </section>
+    </main>
+
+    <my-footer textbutton="MIS PROYECTOS" linkbutton="https://manuelmad.github.io/proyectos/proyectos.html"></my-footer>
+    <script type="module" src="./components/my-header.js"></script>
+    <script type="module" src="./components/my-footer.js"></script>
+</body>
+</html>
